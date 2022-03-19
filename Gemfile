@@ -77,3 +77,5 @@ gem "omniauth-stripe-connect", "~> 2.10"
 gem "letter_opener", "~> 1.8"
 
 gem "resque", "~> 2.2"
+
+gem "annotate", "~> 3.2"

@@ -1,0 +1,17 @@
+<h1>Send me an email when</h1>
+
+<form action="/event_configs" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label for="email">Email</label>
+  <input type="email" name="event_config[email]" id="email" placeholder="Email" value="<%= current_user.email %>">
+
+  <label for="email">Event types</label>
+  <select name="event_config[event_type]">
+    <option>customer.created</option>
+  </select>
+
+  <button>Create</button>
+</form>
+
+
